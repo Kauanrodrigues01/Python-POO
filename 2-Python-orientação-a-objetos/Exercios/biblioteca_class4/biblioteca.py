@@ -1,3 +1,4 @@
+# class importada para class4.py
 class Livro:
     livros = []
     def __init__(self, titulo, autor, ano_publicacao) -> None:

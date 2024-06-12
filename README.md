@@ -44,19 +44,3 @@ Além dos exercícios, este repositório também inclui mini-projetos práticos 
 <p align="center">
   <img src="https://media.giphy.com/media/3o7btNa0RUYa5E7iiQ/giphy.gif" alt="Projetos">
 </p>
-
-<!-- Como Contribuir -->
-## Como Contribuir
-
-Se você deseja contribuir para o Python Playground, siga estas etapas:
-
-1. Faça um fork do repositório e clone-o em sua máquina.
-2. Crie uma branch para suas alterações: `git checkout -b minha-contribuição`.
-3. Faça suas alterações e adicione uma descrição concisa do que foi feito.
-4. Envie suas alterações: `git push origin minha-contribuição`.
-5. Abra um pull request para revisão.
-
-<!-- Rodapé -->
-## Licença
-
-Este projeto é licenciado sob a [MIT License](LICENSE).

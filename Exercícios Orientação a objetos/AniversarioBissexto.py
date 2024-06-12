@@ -33,6 +33,3 @@ class Pessoa:
 pessoa1 = Pessoa('Ana', 30, 'Engenheira', datetime.date(1992, 2, 29))
 pessoa1.exibir_informacoes()
 '''
-
-
-

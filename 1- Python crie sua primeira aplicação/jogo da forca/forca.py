@@ -1,6 +1,45 @@
 import random
 import os
 
+def jogar():
+    os.system('cls')
+    exibir_abertura()
+    palavra_secreta = escolhendo_palavra_secreta()
+
+    letras_acertadas = ['_' for letra in palavra_secreta]
+
+    ganhou = False
+    enforcou = False
+    chances_para_enforcar = 0
+
+    print(letras_acertadas)
+    while (not ganhou and not enforcou):
+        chute = chute_jogador()
+
+        if chute.lower() in palavra_secreta.lower():
+            index = 0
+            for letra in palavra_secreta:
+                if chute.lower() == letra.lower():
+                    letras_acertadas[index] = letra.lower()
+                index += 1
+        else:
+            desenha_forca(chances_para_enforcar)
+            print(f'Você errou você ainda tem {6 -chances_para_enforcar}')
+            chances_para_enforcar += 1
+
+        print(letras_acertadas)
+
+        enforcou = chances_para_enforcar == 7
+        ganhou = '_' not in letras_acertadas
+
+    if (ganhou):
+        imprime_mensagem_vencedor()
+    else:
+        imprime_mensagem_perdedor(palavra_secreta)
+
+print('Fim do jogo')
+
+
 def exibir_abertura():
     print("*********************************")
     print("***Bem vindo ao jogo da Forca!***")
@@ -100,50 +139,12 @@ def desenha_forca(chances_para_enforcar):
     print("_|___         ")
     print()
 
-def jogar():
-    os.system('cls')
-    exibir_abertura()
-    palavra_secreta = escolhendo_palavra_secreta()
-
-    letras_acertadas = ['_' for letra in palavra_secreta]
-
-    ganhou = False
-    enforcou = False
-    chances_para_enforcar = 0
-
-    print(letras_acertadas)
-    while (not ganhou and not enforcou):
-        chute = chute_jogador()
-
-        if chute.lower() in palavra_secreta.lower():
-            index = 0
-            for letra in palavra_secreta:
-                if chute.lower() == letra.lower():
-                    letras_acertadas[index] = letra.lower()
-                index += 1
-        else:
-            desenha_forca(chances_para_enforcar)
-            print(f'Você errou você ainda tem {6 -chances_para_enforcar}')
-            chances_para_enforcar += 1
-
-        print(letras_acertadas)
-
-        enforcou = chances_para_enforcar == 7
-        ganhou = '_' not in letras_acertadas
-
-    if (ganhou):
-        imprime_mensagem_vencedor()
-    else:
-        imprime_mensagem_perdedor(palavra_secreta)
-
-print('Fim do jogo')
-
 
 if __name__ == '__main__':
     jogar()
 
 
-
+# CRIA O ARQUIVO PALAVRAS.TXT, CASO NÃO TENHA
 
 # palavras_exemplo = [
 #     "amor", "casa", "felicidade", "mundo", "livro", "computador", "mesa", "cadeira", "janela", "porta",

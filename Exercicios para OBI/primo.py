@@ -4,15 +4,13 @@ def is_prime(n):
     if n <= 1:
         return False
     if n == 2:
-        return True  # 2 é primo
+        return True
     
-    # Se n é par e maior que 2, não é primo
     if n % 2 == 0:
         return False
     
-    # Testa divisibilidade por todos os ímpares até a raiz quadrada de n
     sqrt_n = n-1
-    for i in range(3, sqrt_n, 2):  # Começa em 3 e vai de 2 em 2
+    for i in range(3, sqrt_n, 2):
         if n % i == 0:
             return False
     

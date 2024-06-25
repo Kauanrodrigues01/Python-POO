@@ -248,4 +248,3 @@ class GerenciadorDeTarefas:
 if __name__ == "__main__":
     task_manager = GerenciadorDeTarefas()
     task_manager.executar()
-           

@@ -172,5 +172,5 @@ def testes():
     conta1.sacar(1000)
     conta1.exibir_saldo()
 
-# Executar os testes
+#testes
 testes()

@@ -132,12 +132,6 @@ for contato in contatos_telefone:
 
 
 agenda.remover_contato('Maria')
-
-
 agenda.listar_contatos()
-
-
 agenda.editar_contato('José')
-
-
 agenda.listar_contatos()

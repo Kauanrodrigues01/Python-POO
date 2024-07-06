@@ -2,7 +2,8 @@
 <h1 align="center">
   <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="Python Logo" width="200">
   <br>
-  Python Playground
+  Python
+
 </h1>
 
 <!-- Descrição -->
@@ -25,7 +26,7 @@
 <!-- Introdução -->
 ## Introdução
 
-Bem-vindo ao Python Playground! Este repositório é dedicado a armazenar e compartilhar exercícios e mini-projetos desenvolvidos durante cursos de Python focados em orientação a objetos e APIs. Se você está interessado em aprender Python ou aprimorar suas habilidades na linguagem, este é o lugar certo!
+Este repositório é dedicado a armazenar e compartilhar exercícios e mini-projetos desenvolvidos durante cursos de Python focados em orientação a objetos e APIs. Se você está interessado em aprender Python ou aprimorar suas habilidades na linguagem, este é o lugar certo!
 
 <!-- Exercícios -->
 ## Exercícios
